@@ -1,0 +1,25 @@
+{
+  "pages" :{
+    "login":                "login",
+    "passwReset":           "password_reset",
+    "registration":         "join",
+    "logout":               "logout",
+    "plan":                 "join/plan",
+    "customize":            "join/customize",
+    "dashboard":            "dashboard"
+  },
+
+  "error":{
+    "incorrectLogin":       "Incorrect username or password."
+  },
+
+  "description":{
+    "loginAs":              "Signed in as "
+  },
+
+  "user1":{
+    "login":                "hrc58140",
+    "email":                "hrc58140@molms.com",
+    "password":             "123Qwerty"
+  }
+}

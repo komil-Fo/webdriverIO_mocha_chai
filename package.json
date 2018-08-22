@@ -1,0 +1,46 @@
+{
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-register": "^6.11.5",
+    "chai": "^4.1.2",
+    "chromedriver": "^2.36",
+    "eslint": "^3.0.1",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-fetch": "0.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jquery": "^0.6.0",
+    "eslint-plugin-no-require-lodash": "^1.1.0",
+    "eslint-plugin-prefer-spread": "^1.0.3",
+    "eslint-plugin-react": "^4.1.0",
+    "mocha": "^5.2.0",
+    "nock": "^9.6.1",
+    "node-firefox-driver": "*",
+    "nyc": "^11.9.0",
+    "selenium-server-standalone-jar": "3.4.0",
+    "selenium-standalone": "^6.15.1",
+    "style-loader": "^0.22.1",
+    "wdio-allure-reporter": "^0.1.3",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-screenshot": "^0.6.0",
+    "wdio-selenium-standalone-service": "0.0.8",
+    "wdio-spec-reporter": "^0.1.5",
+    "wdio-visual-regression-service": "^0.8.0",
+    "webdriverio": "^4.13.1"
+  },
+  "dependencies": {
+    "allure": "0.0.0",
+    "es6": "0.0.7",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "driver": "java -jar -Dwebdriver.gecko.driver=./geckodriver selenium-server-standalone-3.0.1.jar",
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "suite": "./node_modules/.bin/wdio wdio.conf.js --suite",
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "presets": [
+    "env"
+  ]
+}
